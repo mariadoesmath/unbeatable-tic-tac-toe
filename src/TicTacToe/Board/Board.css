@@ -1,0 +1,53 @@
+.board {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.board__row {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.board button {
+  border: none;
+  background-color: white;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.board button:disabled {
+  color: black;
+}
+
+.board button:focus {
+  outline: none;
+  color: #767676;
+}
+
+.board button:focus:before {
+  content: "O";
+}
+
+.board__row:first-child {
+  border-bottom: 1px solid black;
+}
+
+.board__row button:first-child {
+  border-right: 1px solid black;
+}
+
+.board__row:last-child {
+  border-top: 1px solid black;
+}
+
+.board__row button:last-child {
+  border-left: 1px solid black;
+}

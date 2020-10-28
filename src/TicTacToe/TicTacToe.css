@@ -1,0 +1,28 @@
+h1 {
+  margin-bottom: 50px;
+}
+
+.reset-button {
+  background-color: #3c5b97;
+  color: white;
+  height: 40px;
+  width: 80px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.reset-button:disabled {
+  cursor: not-allowed;
+  background-color: #767676;
+}
+
+.reset-button:active {
+  outline: none;
+}
+
+.reset-button:focus {
+  outline-width: 1px;
+  outline-color: #3c7297;
+  outline-offset: 3px;
+}
